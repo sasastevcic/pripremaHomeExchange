@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  background-color: #fff; }
+  header a .logo {
+    max-width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+  header nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    header nav ul {
+      padding: 0;
+      list-style: none; }
+      header nav ul li {
+        text-align: center;
+        line-height: 1.7em; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #151316;
+          font-weight: bolder; }
+
+main .container {
+  background-color: #db4646;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 430px;
+  padding-bottom: 120px; }
+  main .container h1 {
+    color: #151316;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em; }
+main .content {
+  background-color: #432c56;
+  height: 800px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  main .content figure {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: column; }
+    main .content figure .item {
+      position: relative;
+      height: 90px;
+      width: 90px;
+      border: 1px solid #362345;
+      background-color: #362345;
+      border-radius: 50%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      main .content figure .item img {
+        width: 60px;
+        height: auto; }
+    main .content figure figcaption {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 0.8em;
+      margin: 20px 0; }
+
+footer {
+  padding: 60px 30px;
+  background-color: #fff; }
+  footer h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    margin-bottom: 5px; }
+  footer p {
+    font-weight: bolder;
+    color: #aa8bc3;
+    text-align: center;
+    margin-top: 0; }
+  footer form {
+    background-color: #f4f0f7;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+    footer form input, footer form textarea {
+      padding: 5px;
+      margin: 5px 0;
+      background-color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px; }
+      footer form input::placeholder, footer form textarea::placeholder {
+        color: aquamarine; }
+
+@media (min-width: 768px) {
+  header a .logo {
+    margin: 8px 20%;
+    float: left; }
+  header nav ul {
+    display: inline-flex;
+    position: relative;
+    right: -15%;
+    margin-bottom: 5px; }
+    header nav ul li {
+      padding: 10px 5px 2px; }
+
+  main .content {
+    height: 600px;
+    flex-direction: row;
+    align-content: center; }
+    main .content figure {
+      flex-basis: 30%; }
+
+  footer {
+    padding: 50px 150px; }
+    footer form {
+      flex-wrap: wrap;
+      flex-direction: row; }
+      footer form input {
+        flex: 1;
+        flex-basis: 45%; }
+        footer form input:nth-child(2) {
+          margin-left: 10px; }
+      footer form textarea {
+        flex: 2;
+        flex-basis: 90%; } }
+@media (min-width: 1024px) {
+  main .container {
+    padding: 0 100px 120px; }
+  main .content {
+    height: 460px; }
+    main .content figure {
+      flex-direction: row;
+      justify-content: flex-start; }
+      main .content figure figcaption {
+        margin-left: 20px; }
+
+  footer form {
+    flex-wrap: wrap; }
+    footer form input {
+      flex: 1;
+      flex-basis: 45%; }
+    footer form textarea {
+      flex: 2;
+      flex-basis: 95%; } }
+
+/*# sourceMappingURL=style.css.map */

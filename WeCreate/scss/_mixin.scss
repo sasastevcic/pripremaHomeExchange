@@ -1,0 +1,36 @@
+@mixin bBox {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+@mixin bSize {
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+@mixin selectNone {
+    -webkit-user-select: none;        
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+}
+@mixin flexCenter{
+    display: -webkit-flex;
+    display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+          @content;
+}
+
+@mixin tablet {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1024px){
+        @content;
+    }
+}
